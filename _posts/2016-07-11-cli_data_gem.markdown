@@ -7,16 +7,16 @@ date:   2016-07-11 14:48:52 -0400
 
 This is my first assignment in Flatiron School. 
 
-# About
+## About
 The project will scrap data from Google, Yelp, and Zagat, and gather the data together, by analyzing the data, to give user the best restaurants for specific food like pad thai.
 
-# Technologies
+## Technologies
 
 1. Github, working as a team
 2. Google API
 3. Object Oriented Ruby
 
-# Details
+## Details
 
 **1. Github**
 
