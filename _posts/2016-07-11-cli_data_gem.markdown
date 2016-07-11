@@ -19,7 +19,9 @@ The project will scrap data from Google, Yelp, and Zagat, and gather the data to
 # Details
 
 **1. Github**
+
 I have never used Github working with other people. In order to practice it in a team environment, I did the pair programming with Unmi, one of my classmates, which truely allowed me a better understanding of how to use Github in a team.
+
 How to use Github in a team:
 1). Unmi created a repo as the root repo and added me to the contributors. I have two choices, either Fork this the root repo or just pull the repo to my local. In order to have a deep understanding of how it works, I forked the root repo, and then clone the repo to my local.
 2). After cloned the repo under my account, I started writing codes. 
