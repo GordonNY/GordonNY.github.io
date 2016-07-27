@@ -60,7 +60,7 @@ Add a script in order to add message div onto the view:
 
 Execute trigger method to broadcast the messages in the controller:
 
-`Pusher['test_channel'].trigger('new_message', :message => params['message'], :user => user.to_s)`
+```Pusher['test_channel'].trigger('new_message', :message => params['message'], :user => user.to_s)```
 
 
 Github: 
