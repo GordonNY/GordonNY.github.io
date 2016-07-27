@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SINATRA ASSESSMENT"
-date:   2016-07-27 14:28:26 +0000
+date:   2016-07-27 10:28:27 -0400
 ---
 
 
@@ -13,17 +13,21 @@ There are three resources: channel, post, user
 Users can create new accounts in sign up page. When signing up a new account, the email and username must be unique. Also, users must log in in order to use this app.
 
 #### Channel:
+
 For the channel part, users can see all the channels including the one created by other users. Users are able to create their own channel. By clicking join button, users can get into the channel and see the posts created only within this channel. 
 
 #### Post:
+
 For the post part, posts can only be seen in the channel it belongs to. Users are able to edit and delete posts created by their own. At the bottom of the posts column, users can create new post, and publish it in the channel they are in. 
 
 #### Message:
+
 For message part, I used Pusher gem to implement real-time messaging. The message is a global message. All users are able to see all the messages without joining a channel.
 
 #### How to implement real-time messaging with SINATRA:
 
 Register on Pusher website for the keys and config the Pusher:
+
 ```
 Pusher.app_id = '...'
 Pusher.key = '...'
@@ -31,6 +35,7 @@ Pusher.secret = '...'
 ```
 
 Add a script in order to add message div onto the view:
+
 ```
 <script type="text/javascript">
   $(document).ready(function() {
@@ -53,6 +58,7 @@ Add a script in order to add message div onto the view:
 ```
 
 Execute trigger method to broadcast the messages in the controller:
+
 `Pusher['test_channel'].trigger('new_message', :message => params['message'], :user => user.to_s)`
 
 
