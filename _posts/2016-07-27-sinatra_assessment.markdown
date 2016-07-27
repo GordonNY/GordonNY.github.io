@@ -9,14 +9,15 @@ This is my SINATRA assessment. The main purposes of this assessment are to pract
 
 There are three resources: channel, post, user
 
-#### User:
+## User:
+
 Users can create new accounts in sign up page. When signing up a new account, the email and username must be unique. Also, users must log in in order to use this app.
 
-#### Channel:
+## Channel:
 
 For the channel part, users can see all the channels including the one created by other users. Users are able to create their own channel. By clicking join button, users can get into the channel and see the posts created only within this channel. 
 
-#### Post:
+## Post:
 
 For the post part, posts can only be seen in the channel it belongs to. Users are able to edit and delete posts created by their own. At the bottom of the posts column, users can create new post, and publish it in the channel they are in. 
 
@@ -24,7 +25,7 @@ For the post part, posts can only be seen in the channel it belongs to. Users ar
 
 For message part, I used Pusher gem to implement real-time messaging. The message is a global message. All users are able to see all the messages without joining a channel.
 
-#### How to implement real-time messaging with SINATRA:
+## How to implement real-time messaging with SINATRA:
 
 Register on Pusher website for the keys and config the Pusher:
 
