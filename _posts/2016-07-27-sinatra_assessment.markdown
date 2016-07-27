@@ -21,7 +21,7 @@ For the channel part, users can see all the channels including the one created b
 
 For the post part, posts can only be seen in the channel it belongs to. Users are able to edit and delete posts created by their own. At the bottom of the posts column, users can create new post, and publish it in the channel they are in. 
 
-#### Message:
+## Message:
 
 For message part, I used Pusher gem to implement real-time messaging. The message is a global message. All users are able to see all the messages without joining a channel.
 
@@ -63,7 +63,9 @@ Execute trigger method to broadcast the messages in the controller:
 `Pusher['test_channel'].trigger('new_message', :message => params['message'], :user => user.to_s)`
 
 
-Github: https://github.com/GordonNY/sinatra-assessment
+Github: 
+
+[https://github.com/GordonNY/sinatra-assessment](https://github.com/GordonNY/sinatra-assessment)
 
 
 
